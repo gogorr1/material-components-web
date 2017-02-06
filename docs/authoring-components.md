@@ -496,6 +496,24 @@ Additionally, all new components require the following within their `package.jso
 
 This is needed so that lerna will be able to automatically publish new scoped packages.
 
+**Below is an example of what a full `package.json` should look like for a new component:**
+
+```json
+{
+  "name": "@material/example",
+  "version": "0.0.0",
+  "description": "The Material Components for the web example component",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/material-components/material-components-web.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
+```
+
 ### License Stanzas
 
 We are required to put the following at the _top_ of _every source code file_, including tests,
